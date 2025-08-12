@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Proyecto con Bootstrap</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="/assets/img/logo.jpg" alt="Logo" width="50" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Obras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+
+    <main>
+      <section>
+            <div class="contenedor-home">
+                <div class="home">
+                    <h1 class="display-1" >Bienvenidos</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ipsum!</p>
+                    <button type="button" class="btn btn-primary btn-lg text-center">Sobre Nosotros</button>
+                </div>
+            </div>
+      </section>
+    </main>
+    
+    <section>
+        <div class="contenedor-quienes">
+            <div class="contenedor-box">
+                    <div class="box">
+                        <div class="bx1">
+                            <h1> 
+                                SOMOS VIT CRISTALES
+                            </h1>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste quaerat natus quae vel quod assumenda voluptas provident recusandae nobis asperiores sit, totam similique, placeat accusamus et. Nesciunt at, nostrum, labore ducimus maiores consectetur, magni illum saepe expedita ratione sequi reprehenderit voluptate sint rem quas veniam. Molestias culpa quis autem dolor quos unde perspiciatis pariatur magnam eos consequatur nobis maiores enim maxime, excepturi, suscipit labore. Unde a excepturi asperiores quae.</p>
+                        </div>
+                        <div class="bx2">
+                        <img src="/assets/img/box.jpg" class=img-box>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+  <section id="productos-destacados" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 color-text-products">PRODUCTOS EN PROMOCIÓN</h2>
+        
+        <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/img/c1.jpg" class="d-block w-100 card-img-custom" alt="Descripción del producto 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mamparas</h5>
+                        <p>Breve descripción del producto 1.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/assets/img/c2.jpg" class="d-block w-100 card-img-custom" alt="Descripción del producto 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Espejos</h5>
+                        <p>Breve descripción del producto 2.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/assets/img/c3.jpg" class="d-block w-100 card-img-custom" alt="Descripción del producto 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Título del Producto 3</h5>
+                        <p>Breve descripción del producto 3.</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="/assets/img/c3.jpg" class="d-block w-100 card-img-custom" alt="Descripción del producto 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Título del Producto 4</h5>
+                        <p>Breve descripción del producto 4.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+  </section>
+
+  <section id="obras-realizadas" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 color-text" >NUESTROS TRABAJOS</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="/assets/img/espejos.jpg" class="card-img-top card-img-custom" alt="Descripción del Proyecto 1">
+                    <div class="card-body text-primary-emphasis">
+                        <h5 class="card-title text-center color-titulos">Espejos</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="/assets/img/mamparas.jpg" class="card-img-top card-img-custom" alt="Descripción del Proyecto 2">
+                    <div class="card-body text-primary-emphasis">
+                        <h5 class="card-title text-center">Mamparas</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="/assets/img/escaleras.jpg" class="card-img-top card-img-custom" alt="Descripción del Proyecto 3">
+                    <div class="card-body text-primary-emphasis">
+                        <h5 class="card-title text-center">Baranda de escaleras</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="/assets/img/techos.jpg" class="card-img-top card-img-custom" alt="Descripción del Proyecto 4">
+                    <div class="card-body text-primary-emphasis">
+                        <h5 class="card-title text-center">Techos</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="/assets/img/oficinas.jpg" class="card-img-top card-img-custom" alt="Descripción del Proyecto 5">
+                    <div class="card-body text-primary-emphasis">
+                        <h5 class="card-title text-center">Cerramientos de oficinas</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="/assets/img/piletas.jpg" class="card-img-top card-img-custom" alt="Descripción del Proyecto 6">
+                    <div class="card-body text-primary-emphasis">
+                        <h5 class="card-title text-center">Barandas de piletas</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-4">Contáctanos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="tel:+5493584000000" class="text-light text-decoration-none"><i class="fa-solid fa-phone me-2"></i> +54 9 358 4000000</a></li>
+                    <li><a href="mailto:info@vitcristales.com" class="text-light text-decoration-none"><i class="fa-solid fa-envelope me-2"></i> info@vitcristales.com</a></li>
+                    <li><a href="#" class="text-light text-decoration-none"><i class="fa-solid fa-location-dot me-2"></i> Calle Falsa 123, Río Cuarto, Córdoba</a></li>
+                </ul>
+                <div class="social-links mt-3">
+                    <a href="https://www.facebook.com/" target="_blank" class="text-light me-3"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-light me-3"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://www.whatsapp.com/" target="_blank" class="text-light"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-4">Nuestra Ubicación</h5>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4726.959256140918!2d-64.3299108953088!3d-33.09685846312728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdff9cb6ab286f%3A0x7348b2a14543c24a!2sVit%20Cristales!5e0!3m2!1ses!2sar!4v1754956240887!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-4">Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-light text-decoration-none">Inicio</a></li>
+                    <li><a href="#quienes-somos" class="text-light text-decoration-none">Quiénes Somos</a></li>
+                    <li><a href="#obras-realizadas" class="text-light text-decoration-none">Obras Realizadas</a></li>
+                    <li><a href="#productos-destacados" class="text-light text-decoration-none">Productos</a></li>
+                    <li><a href="#contacto" class="text-light text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="my-4">
+        <div class="text-center">
+            <p>© 2024 Vit Cristales. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
