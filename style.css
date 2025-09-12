@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     background-image: url('/assets/img/c3.jpg');
+    background-image: url('/assets/img/home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,8 +115,35 @@
 .card {
     overflow: hidden;}
 
-
 .color-text-products{
-color: #0c2431;
+    color: #0c2431;
     font-weight: 900;
+}
+
+
+/*SECCIÒN PRODUCTOS - MAMPARAS */
+
+.contenedor-mamp {
+  height: 100vh;
+  width: 100%;
+  padding: 50px 30px 20px 60px;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../assets/img/fondo_mampara.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+.titulo-mamparas{
+    color: floralwhite;
+    font-size: calc(1.375rem + 1.5vw);
+    font-size: 70px;
+    font-weight: bolder;
+    padding-top: 60px;
 }

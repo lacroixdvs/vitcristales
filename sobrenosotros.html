@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Proyecto con Bootstrap</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
+</head>
+<body>
+     <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="/assets/img/logo.jpg" alt="Logo" width="50" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nosotros</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/mamparas.html">Mamparas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/espejos.html">Espejos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/cerramientos_ofi.html">Cerramientos de Oficina</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Obras</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+     
+<footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-4">Contáctanos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="tel:+5493584000000" class="text-light text-decoration-none"><i class="fa-solid fa-phone me-2"></i> +54 9 358 4000000</a></li>
+                    <li><a href="mailto:info@vitcristales.com" class="text-light text-decoration-none"><i class="fa-solid fa-envelope me-2"></i> info@vitcristales.com</a></li>
+                    <li><a href="#" class="text-light text-decoration-none"><i class="fa-solid fa-location-dot me-2"></i> Calle Falsa 123, Río Cuarto, Córdoba</a></li>
+                </ul>
+                <div class="social-links mt-3">
+                    <a href="https://www.facebook.com/" target="_blank" class="text-light me-3"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="text-light me-3"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://www.whatsapp.com/" target="_blank" class="text-light"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-4">Nuestra Ubicación</h5>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4726.959256140918!2d-64.3299108953088!3d-33.09685846312728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdff9cb6ab286f%3A0x7348b2a14543c24a!2sVit%20Cristales!5e0!3m2!1ses!2sar!4v1754956240887!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-4">Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-light text-decoration-none">Inicio</a></li>
+                    <li><a href="#quienes-somos" class="text-light text-decoration-none">Quiénes Somos</a></li>
+                    <li><a href="#obras-realizadas" class="text-light text-decoration-none">Obras Realizadas</a></li>
+                    <li><a href="#productos-destacados" class="text-light text-decoration-none">Productos</a></li>
+                    <li><a href="#contacto" class="text-light text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="my-4">
+        <div class="text-center">
+            <p>© 2024 Vit Cristales. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
