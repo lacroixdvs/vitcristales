@@ -1,4 +1,9 @@
 /* SECCION HOME */
+body{
+    font-family: "Inter", sans-serif; 
+    font-weight: bold;
+}
+
 .contenedor-home{
     display: flex;
     flex-direction: column;
@@ -12,6 +17,9 @@
     width: auto;
 }
 /* FIN SECCION HOME */
+
+
+
 
 /* SECCION QUIENES */
 
@@ -128,8 +136,8 @@
   width: 100%;
   padding: 50px 30px 20px 60px;
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
     ),
     url('../assets/img/fondo_mampara.jpg');
   background-size: cover;
@@ -141,9 +149,15 @@
 
 
 .titulo-mamparas{
-    color: floralwhite;
+    color: rgb(251, 251, 251);
     font-size: calc(1.375rem + 1.5vw);
-    font-size: 70px;
+    font-size: 80px;
     font-weight: bolder;
-    padding-top: 60px;
+    font-family: "Inter", sans-serif; 
+    padding-top: 110px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9); /* sombra negra */
 }
+
+
+
+/* CARDS MAMPARAS */
