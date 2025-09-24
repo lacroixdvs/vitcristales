@@ -1,7 +1,7 @@
 /* SECCION HOME */
 body{
     font-family: "Inter", sans-serif; 
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 .contenedor-home{
@@ -9,12 +9,17 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('/assets/img/home.jpg');
+    background-image: url('/assets/img/Fondo\ inicio.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 650px;
     width: auto;
+    
+}
+.titulo-home{
+    font-size: 50px;
+    color: white;
 }
 /* FIN SECCION HOME */
 
@@ -60,7 +65,7 @@ body{
     height: auto;
     object-fit: cover; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.199);
+    box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.199);
 }
 
 
@@ -161,3 +166,36 @@ body{
 
 
 /* CARDS MAMPARAS */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* sombra negra fija */
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.card:hover::before {
+  background: rgba(0,0,0,0.2); /* se aclara un poco en hover */
+}
+
+.card-img-custom {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-custom {
+  transform: scale(1.03); /* pequeño zoom */
+}
+
+.card-img-overlay {
+  position: relative;
+  z-index: 2; /* texto arriba del overlay */
+}
