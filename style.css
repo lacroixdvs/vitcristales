@@ -4,23 +4,52 @@ body{
     font-weight: bold; 
 }
 
-.contenedor-home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url('./assets/img/Fondo\ inicio.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 650px;
-    width: auto;
-    
+/* SECCION HOME */
+.contenedor-home {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./assets/img/fondoinicio2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  position: relative; /* Importante para posicionar el overlay */
 }
-.titulo-home{
-    font-size: 50px;
-    color: white;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Color negro con 50% de opacidad */
+  z-index: 1; /* Para que esté por encima de la imagen de fondo pero debajo del contenido */
 }
+
+.contenedor-home h1,
+.contenedor-home p,
+.contenedor-home button {
+  z-index: 2; /* Para que el texto y el botón estén por encima del overlay */
+  position: relative; /* Asegura que el z-index funcione correctamente */
+}
+
+.titulo-home {
+  font-size: 80px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombreado para el texto */
+}
+
+.p-contenedor{
+    color: rgba(1, 0, 0, 0.849);
+}
+
+/* FIN SECCION HOME */
 /* FIN SECCION HOME */
 
 
@@ -97,6 +126,60 @@ body{
 }
 
 /* FIN SECCION QUIENES */
+
+.valores-container {
+  background-color: #373a3d87; /* Color de fondo azul oscuro */
+  color: white; /* Color de texto blanco */
+  padding: 30px 0; /* Espaciado interno superior e inferior */
+  font-size: 20px;
+  text-align: center;
+}
+
+.valores-container h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.valores-container p, .valores-container ul {
+  font-size: 1.1rem;
+}
+
+.valores-container ul {
+  list-style: none; /* Eliminar viñetas de la lista */
+  padding-left: 0;
+}
+
+.valores-container li {
+  margin-bottom: 15px;
+}
+
+.valores-container .col-md-4 {
+  border-right: 3px solid rgba(214, 209, 209, 0.061); /* Línea vertical divisoria */
+  padding: 20px;
+}
+
+.valores-container .col-md-4:last-child {
+  border-right: none; /* Eliminar la línea en la última columna */
+}
+
+/* Estilos para los íconos (asumiendo que usas Font Awesome) */
+.valores-container i {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* SECCION  */
