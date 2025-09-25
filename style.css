@@ -1,9 +1,11 @@
+
+/*--------------COMIENZO DEL INDEX*------------------/
+
 /* SECCION HOME */
 body{
     font-family: "Inter", sans-serif; 
     font-weight: bold; 
 }
-
 /* SECCION HOME */
 .contenedor-home {
   font-family: "Inter", sans-serif;
@@ -12,7 +14,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(./assets/img/fondoinicio2.jpeg);
+  background-image: url(./assets/img/home.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +22,6 @@ body{
   width: auto;
   position: relative; /* Importante para posicionar el overlay */
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -30,29 +31,22 @@ body{
   background-color: rgba(0, 0, 0, 0.7); /* Color negro con 50% de opacidad */
   z-index: 1; /* Para que esté por encima de la imagen de fondo pero debajo del contenido */
 }
-
 .contenedor-home h1,
 .contenedor-home p,
 .contenedor-home button {
   z-index: 2; /* Para que el texto y el botón estén por encima del overlay */
   position: relative; /* Asegura que el z-index funcione correctamente */
 }
-
 .titulo-home {
-  font-size: 80px;
+  font-size: 110px;
   font-weight: 800;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombreado para el texto */
 }
-
 .p-contenedor{
     color: rgba(1, 0, 0, 0.849);
 }
-
 /* FIN SECCION HOME */
-/* FIN SECCION HOME */
-
-
 
 
 /* SECCION QUIENES */
@@ -60,7 +54,6 @@ body{
 .contenedor-quienes {
     padding: 20px; 
 }
-
 .box {
     display: flex;
     flex-direction: row;
@@ -97,7 +90,6 @@ body{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.199);
 }
 
-
 @media (max-width: 768px) {
     .box {
 
@@ -127,63 +119,7 @@ body{
 
 /* FIN SECCION QUIENES */
 
-.valores-container {
-  background-color: #62676c38; /* Color de fondo azul oscuro */
-  color: rgb(0, 0, 0); /* Color de texto blanco */
-  padding: 30px 0; /* Espaciado interno superior e inferior */
-  font-size: 20px;
-  text-align: center;
-}
-
-.valores-container h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.valores-container p, .valores-container ul {
-  font-size: 1.1rem;
-}
-
-.valores-container ul {
-  list-style: none; /* Eliminar viñetas de la lista */
-  padding-left: 0;
-}
-
-.valores-container li {
-  margin-bottom: 15px;
-}
-
-.valores-container .col-md-4 {
-  border-right: 3px solid rgba(214, 209, 209, 0.061); /* Línea vertical divisoria */
-  padding: 20px;
-}
-
-.valores-container .col-md-4:last-child {
-  border-right: none; /* Eliminar la línea en la última columna */
-}
-
-/* Estilos para los íconos (asumiendo que usas Font Awesome) */
-.valores-container i {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* SECCION  */
-
 
 .card-img-custom {
     height: 250px;
@@ -191,12 +127,10 @@ body{
     object-position: center;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
-
 .card:hover .card-img-custom {
     transform: scale(1.03); 
     filter: brightness(1.1);
 }
-
 
 .card {
     overflow: hidden; 
@@ -216,8 +150,128 @@ body{
     font-weight: 900;
 }
 
+/* ----------------------FIN DE INDEX-------------------------------*/
 
-/*SECCIÒN PRODUCTOS - MAMPARAS */
+
+
+
+/*----------------------PAGINA 2 - SOMBRE NOSOTROS------------------*/
+
+
+
+.hero-section {
+  background: url("./assets/img/fon1.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+}
+
+.hero-section h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.about-section {
+  padding: 4rem 2rem;
+}
+
+
+.team-card {
+  border-radius: 15px;
+  padding-bottom: 1rem;
+  height: 100%;
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid #0d6efd; /* borde azul */
+}
+.team-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCIÒN PRODUCTOS - ----------------MAMPARAS----------- */
 
 .contenedor-mamp {
   height: 100vh;
@@ -234,8 +288,6 @@ body{
   font-size: 30px;
   font-weight: bolder;
 }
-
-
 .titulo-mamparas{
     color: rgb(251, 251, 251);
     font-size: calc(1.375rem + 1.5vw);
@@ -245,8 +297,6 @@ body{
     padding-top: 110px;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9); /* sombra negra */
 }
-
-
 
 /* CARDS MAMPARAS */
 .card {
@@ -267,7 +317,7 @@ body{
 }
 
 .card:hover::before {
-  background: rgba(0,0,0,0.2); /* se aclara un poco en hover */
+  background: rgba(0,0,0,0.8); /* se aclara un poco en hover */
 }
 
 .card-img-custom {
