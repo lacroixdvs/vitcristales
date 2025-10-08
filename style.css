@@ -8,72 +8,60 @@ body{
     font-weight: bold; 
 }
 .contenedor-home {
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(./assets/img/home.jpg);
+  position: relative;
+  height: 100vh; /* ocupa toda la pantalla */
+  background-image: url("tu-imagen.jpg"); /* cambia por la tuya */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh; 
-  width: auto;
-  position: relative;
-  color: white; 
+  color: white;
+  overflow: hidden;
 }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75); 
-  z-index: 1; 
+  background: rgba(0, 0, 0, 0.5); /* oscurece el fondo */
+  z-index: 1;
 }
 
-.contenedor-home h1,
-.contenedor-home p,
-.contenedor-home button {
-  z-index: 2;
+.contenido-home {
   position: relative;
-  text-align: center; 
-  padding: 0 15px; 
+  z-index: 2;
+  padding: 1rem;
 }
 
 .titulo-home {
-  font-size: 110px;
-  font-weight: 800;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  margin-bottom: 20px; 
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.p-contenedor{
-    color: #eee; 
-    font-size: 1.5rem;
-    font-weight: 400;
+.p-contenedor {
+  font-size: 1.5rem;
 }
 
-@media (max-width: 992px) {
-    .titulo-home {
-        font-size: 80px; 
-    }
-    .p-contenedor {
-        font-size: 1.25rem; 
-    }
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+  .titulo-home {
+    font-size: 2.2rem;
+  }
+  .p-contenedor {
+    font-size: 1.2rem;
+  }
 }
 
-@media (max-width: 576px) {
-    .titulo-home {
-        font-size: 48px; 
-        line-height: 1.1; 
-    }
-    .p-contenedor {
-        font-size: 1rem; 
-    }
+@media (max-width: 480px) {
+  .titulo-home {
+    font-size: 1.8rem;
+  }
+  .p-contenedor {
+    font-size: 1rem;
+  }
 }
+
 /* FIN SECCION HOME */
 
 
@@ -185,8 +173,6 @@ body{
 
 /*----------------------PAGINA 2 - SOMBRE NOSOTROS------------------*/
 
-
-
 .hero-section {
   background: url("./assets/img/fon1.jpg") center/cover no-repeat;
   height: 60vh;
@@ -235,11 +221,11 @@ body{
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   padding-bottom: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .team-card:hover {
-  transform: translateY(-10px) scale(1.05);
+  transform: translateY(-10px) scale(1.03);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
