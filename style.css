@@ -1,20 +1,30 @@
 
 /*--------------COMIENZO DEL INDEX*------------------/
 
-/* SECCION HOME */
-body{
+body {
     padding-top: 56px; 
     font-family: "Inter", sans-serif; 
     font-weight: bold; 
 }
+
+/* 🌟 APLICACIÓN DE FLEXBOX PARA CENTRADO 🌟 */
 .contenedor-home {
   position: relative;
-  height: 100vh; /* ocupa toda la pantalla */
-  background-image: url("tu-imagen.jpg"); /* cambia por la tuya */
+  height: 100vh; 
+  background-image: url("./assets/img/home.jpg"); 
   background-size: cover;
   background-position: center;
   color: white;
   overflow: hidden;
+  
+  /* 1. Habilitar Flexbox */
+  display: flex;
+  
+  /* 2. Centrar H O R I Z O N T A L M E N T E */
+  justify-content: center; 
+  
+  /* 3. Centrar V E R T I C A L M E N T E */
+  align-items: center; 
 }
 
 .overlay {
@@ -23,27 +33,33 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* oscurece el fondo */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
 }
 
 .contenido-home {
-  position: relative;
+  position: relative; 
   z-index: 2;
+  /* Centrar el texto dentro de su propio bloque */
+  text-align: center; 
+  /* Asegurar que no se estire demasiado en pantallas grandes */
+  width: 90%; 
+  max-width: 800px;
   padding: 1rem;
 }
 
 .titulo-home {
-  font-size: 3rem;
+  font-size: 100px;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); 
 }
 
 .p-contenedor {
   font-size: 1.5rem;
 }
 
-/* 📱 Responsividad */
+/* 📱 Responsividad (Ajuste del tamaño de fuente, ya lo tenías y funciona bien) */
 @media (max-width: 768px) {
   .titulo-home {
     font-size: 2.2rem;
