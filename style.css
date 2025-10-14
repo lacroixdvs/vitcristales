@@ -1,30 +1,20 @@
-
-/*--------------COMIENZO DEL INDEX*------------------/
-
 body {
-    padding-top: 56px; 
-    font-family: "Inter", sans-serif; 
-    font-weight: bold; 
+  padding-top: 56px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
 }
 
-/* 🌟 APLICACIÓN DE FLEXBOX PARA CENTRADO 🌟 */
 .contenedor-home {
   position: relative;
-  height: 100vh; 
-  background-image: url("./assets/img/home.jpg"); 
+  height: 100vh;
+  background-image: url("./assets/img/home.jpg");
   background-size: cover;
   background-position: center;
   color: white;
   overflow: hidden;
-  
-  /* 1. Habilitar Flexbox */
   display: flex;
-  
-  /* 2. Centrar H O R I Z O N T A L M E N T E */
-  justify-content: center; 
-  
-  /* 3. Centrar V E R T I C A L M E N T E */
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay {
@@ -33,17 +23,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .contenido-home {
-  position: relative; 
+  position: relative;
   z-index: 2;
-  /* Centrar el texto dentro de su propio bloque */
-  text-align: center; 
-  /* Asegurar que no se estire demasiado en pantallas grandes */
-  width: 90%; 
+  text-align: center;
+  width: 90%;
   max-width: 800px;
   padding: 1rem;
 }
@@ -52,18 +40,18 @@ body {
   font-size: 100px;
   font-weight: bold;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .p-contenedor {
   font-size: 1.5rem;
 }
 
-/* 📱 Responsividad (Ajuste del tamaño de fuente, ya lo tenías y funciona bien) */
 @media (max-width: 768px) {
   .titulo-home {
     font-size: 2.2rem;
   }
+
   .p-contenedor {
     font-size: 1.2rem;
   }
@@ -73,6 +61,7 @@ body {
   .titulo-home {
     font-size: 1.8rem;
   }
+
   .p-contenedor {
     font-size: 1rem;
   }
@@ -84,102 +73,115 @@ body {
 /* SECCION QUIENES */
 
 .contenedor-quienes {
-    padding: 20px; 
+  padding: 20px;
 }
+
 .box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px; 
-    max-width: 1200px; 
-    margin: 0 auto; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .bx1 {
-    width: 50%;
-    padding: 25px;
+  width: 50%;
+  padding: 25px;
 }
+
 .bx1 h1 {
-    font-size: 2.5rem; 
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
+
 .bx1 p {
-    font-size: 1.1rem;
-    line-height: 1.6; 
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
+
 .bx2 {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .img-box {
-    width: 100%; 
-    max-width: 500px;
-    height: auto;
-    object-fit: cover; 
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.199);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.199);
 }
 
 @media (max-width: 768px) {
-    .box {
+  .box {
 
-        flex-direction: column;
-        text-align: center; 
-        gap: 20px; 
-    }
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 
-    .bx1, .bx2 {
-        width: 100%;
-        padding: 10px;
-    }
+  .bx1,
+  .bx2 {
+    width: 100%;
+    padding: 10px;
+  }
 
-    .bx1 h1 {
-        font-size: 1.8rem; 
-    }
+  .bx1 h1 {
+    font-size: 1.8rem;
+  }
 
-    .bx1 p {
-        font-size: 1rem;
-    }
+  .bx1 p {
+    font-size: 1rem;
+  }
 
-    .img-box {
-        width: 100%;
-        max-width: none;
-    }
+  .img-box {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 /* FIN SECCION QUIENES */
 
+
+
 /* SECCION  */
-
 .card-img-custom {
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 0.3s ease, filter 0.3s ease;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 .card:hover .card-img-custom {
-    transform: scale(1.03); 
-    filter: brightness(1.1);
+  transform: scale(1.03);
+  filter: brightness(1.1);
 }
 
 .card {
-    overflow: hidden; 
+  overflow: hidden;
 }
-.color-text{
-    color: #139ee9;
-    font-weight: 900;
+
+.color-text {
+  color: #139ee9;
+  font-weight: 900;
 }
+
 .card-title {
-    font-weight: 900;
+  font-weight: 900;
 }
-.card {
-    overflow: hidden;}
 
-.color-text-products{
-    color: #0c2431;
-    font-weight: 900;
+.card {
+  overflow: hidden;
+}
+
+.color-text-products {
+  color: #0c2431;
+  font-weight: 900;
 }
 
 /* ----------------------FIN DE INDEX-------------------------------*/
@@ -203,9 +205,9 @@ body {
 .hero-section::before {
   content: "";
   position: absolute;
-  top: 0; 
-  left: 0; 
-  right: 0; 
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
 }
 
@@ -220,7 +222,6 @@ body {
   padding: 4rem 2rem;
 }
 
-
 .team-card {
   border-radius: 15px;
   padding-bottom: 1rem;
@@ -231,40 +232,21 @@ body {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border: 4px solid #0d6efd; /* borde azul */
+  border: 4px solid #0d6efd;
+  /* borde azul */
 }
+
 .team-card {
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding-bottom: 1rem;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .team-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -304,61 +286,93 @@ body {
 /*SECCIÒN PRODUCTOS - ----------------MAMPARAS----------- */
 
 .contenedor-mamp {
-  height: 100vh;
+  height: 50vh;
   width: 100%;
-  padding: 50px 30px 20px 60px;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3), 
-      rgba(0, 0, 0, 0.3)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)),
     url('../assets/img/fondo_mampara.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
 }
-.titulo-mamparas{
-    color: rgb(251, 251, 251);
-    font-size: calc(1.375rem + 1.5vw);
-    font-size: 80px;
-    font-weight: bolder;
-    font-family: "Inter", sans-serif; 
-    padding-top: 110px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9); /* sombra negra */
+
+.titulo-mamparas {
+  color: rgb(251, 251, 251);
+  font-size: calc(1.375rem + 1.5vw);
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 110px;
+  text-align: center;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+  /* sombra negra */
 }
 
-/* CARDS MAMPARAS */
-.card {
-  position: relative;
-  overflow: hidden;
+#descripcion-mamparas {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.custom-separator {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  opacity: 1;
+} 
+
+.custom-btn-outline {
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn-outline:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#descripcion-mamparas h3 span.fw-normal {
+  font-weight: 300 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  font-weight: 600;
+  color: #6c757d;
+  transition: color 0.3s;
+}
+
+.nav-tabs .nav-link.active {
+  color: #000000;
+  /* Texto negro */
+  background-color: transparent;
+  border-bottom: 3px solid #007bff;
+  /* Línea de acento azul (usa tu color principal) */
+  font-weight: bold;
+}
+
+.tab-content {
+  /* Puedes quitar estos bordes si quieres un look más minimalista */
+  /* border: 1px solid #dee2e6;  */
+  /* border-top: none; */
+  padding: 20px 0;
+  /* Ajusta el padding para dar espacio al contenido */
+}
+
+.tab-pane .row img {
   width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4); /* sombra negra fija */
-  z-index: 1;
-  transition: background 0.3s ease;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.2s;
 }
 
-.card:hover::before {
-  background: rgba(0,0,0,0.8); /* se aclara un poco en hover */
-}
-
-.card-img-custom {
-  transition: transform 0.3s ease;
-}
-
-.card:hover .card-img-custom {
-  transform: scale(1.03); /* pequeño zoom */
-}
-
-.card-img-overlay {
-  position: relative;
-  z-index: 2; /* texto arriba del overlay */
+.tab-pane .row img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
 }
