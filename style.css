@@ -1,7 +1,5 @@
 body {
   padding-top: 56px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
 }
 
 .contenedor-home {
@@ -150,10 +148,19 @@ body {
 
 
 /* SECCION  */
+/* SECCION */
+.card {
+  overflow: hidden;
+  height: 250px; /* Todas las tarjetas con la misma altura */
+  border-radius: 10px;
+  position: relative;
+}
+
 .card-img-custom {
-  height: 250px;
-  object-fit: cover;
-  object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta sin deformar */
+  object-position: center; /* Centra la imagen */
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -162,8 +169,15 @@ body {
   filter: brightness(1.1);
 }
 
-.card {
-  overflow: hidden;
+.card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4); /* Oscurece un poco la imagen */
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .color-text {
@@ -175,13 +189,16 @@ body {
   font-weight: 900;
 }
 
-.card {
-  overflow: hidden;
-}
-
 .color-text-products {
   color: #0c2431;
   font-weight: 900;
+}
+
+/* --- Responsive: tarjetas más bajas en pantallas chicas --- */
+@media (max-width: 768px) {
+  .card {
+    height: 200px;
+  }
 }
 
 /* ----------------------FIN DE INDEX-------------------------------*/
@@ -214,7 +231,6 @@ body {
 .hero-section h1 {
   position: relative;
   font-size: 3rem;
-  font-weight: bold;
   z-index: 1;
 }
 
@@ -256,58 +272,43 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*SECCIÒN PRODUCTOS - ----------------MAMPARAS----------- */
 
 .contenedor-mamp {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)),
-    url('../assets/img/fondo_mampara.jpg');
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('./assets/img/fondos-secciones/fondo-seccion-mampara.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-size: 25px;
-  font-weight: bolder;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 }
 
 .titulo-mamparas {
   color: rgb(251, 251, 251);
-  font-size: calc(1.375rem + 1.5vw);
-  font-size: 70px;
   font-weight: bold;
-  padding-top: 110px;
-  text-align: center;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
-  /* sombra negra */
+  font-size: clamp(1.8rem, 6vw, 4.5rem);
+  /* ✅ se adapta automáticamente al tamaño de pantalla */
 }
+
+º
+@media (max-width: 576px) {
+  .contenedor-mamp {
+    height: 40vh;
+    padding: 2rem 1rem;
+  }
+}
+
 
 #descripcion-mamparas {
   padding-top: 5rem;
