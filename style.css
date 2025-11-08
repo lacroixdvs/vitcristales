@@ -294,7 +294,6 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,8 +504,7 @@ section {
 }
 
 /*** COMEINZO DE SECCION BARANDAS**/
-/* Sección principal de BARANDAS */
-/* Sección principal de BARANDAS */
+
 .contenedor-barandas {
   position: relative;
   width: 100%;
