@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Proyecto con Bootstrap</title>
+  <title>Inicio</title>
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <!-- Animate.css -->
@@ -16,6 +16,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="shortcut icon" href="./assets/img/logo.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Productos
+                Servicios
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./mamparas.html">Mamparas</a></li>
@@ -55,7 +56,7 @@
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Cerramientos</a></li>
+                <li><a class="dropdown-item" href="#">Cerramientos/Oficinas</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -70,7 +71,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Obras</a>
+              <a class="nav-link" href="#">Mantenimientos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
@@ -102,7 +103,8 @@
                 assumenda voluptas provident recusandae nobis asperiores sit, totam similique, placeat accusamus et...
               </p>
               <BR></BR>
-              <button class="btn btn-primary">Sobre Nosotros</button>
+              <button class="btn btn-primary"><a href="/sobrenosotros.html"
+                  class="text-light text-decoration-none">Sobre Nosotros</a></button>
 
             </div>
 
@@ -122,53 +124,69 @@
           <!-- Tarjeta ejemplo -->
           <div class="col-md-4">
             <div class="card border-0">
-              <img src="assets/img/espejomarco-home.jpeg" class="card-img-custom"  alt="Espejos">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <h5 class="text-white fw-bold text-shadow">MAMPARAS</h5>
-              </div>
+              <a href="mamparas.html" class="card border-0 text-decoration-none">
+                <img src="assets/img/img_mamparas/frontales/mampfront6.jpeg" class="card-img-custom" alt="Espejos">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="text-white fw-bold text-shadow">MAMPARAS</h5>
+                </div>
+              </a>
             </div>
           </div>
           <!-- Repite para las demás... -->
           <div class="col-md-4">
-            <div class="card border-0">
-              <img src="assets/img/espejomarco-home.jpeg" class="card-img-custom"  alt="Espejos">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <h5 class="text-white fw-bold text-shadow">ESPEJOS</h5>
+            <a href="espejos.html" class="text-decoration-none">
+              <div class="card border-0">
+                <img src="assets/img/espejomarco-home.jpeg" class="card-img-custom" alt="Espejos">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="text-white fw-bold text-shadow">ESPEJOS</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-md-4">
-            <div class="card border-0">
-              <img src="assets/img/escalera-home.jpeg" class="card-img-custom"  alt="Barandas">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <h5 class="text-white fw-bold text-shadow">BARANDAS</h5>
+            <a href="barandas.html" class="text-decoration-none">
+              <div class="card border-0">
+                <img src="assets/img/escalera-home.jpeg" class="card-img-custom" alt="Barandas">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="text-white fw-bold text-shadow">BARANDAS</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
+
           <div class="col-md-4">
-            <div class="card border-0">
-              <img src="assets/img/oficinas-home.jpeg" class="card-img-custom" alt="Cerramientos">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <h5 class="text-white fw-bold text-shadow">CERRAMIENTOS</h5>
+            <a href="cerramientos.html" class="text-decoration-none">
+              <div class="card border-0">
+                <img src="assets/img/oficinas-home.jpeg" class="card-img-custom" alt="Cerramientos">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="text-white fw-bold text-shadow">CERRAMIENTOS</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
+
           <div class="col-md-4">
-            <div class="card border-0">
-              <img src="assets/img/puerta-home.jpg" class="card-img-custom"  alt="Puertas">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <h5 class="text-white fw-bold text-shadow">PUERTAS</h5>
+            <a href="puertas.html" class="text-decoration-none">
+              <div class="card border-0">
+                <img src="assets/img/puerta-home.jpg" class="card-img-custom" alt="Puertas">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="text-white fw-bold text-shadow">PUERTAS</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
+
           <div class="col-md-4">
-            <div class="card border-0">
-              <img src="assets/img/profilit-home.jpg" class="card-img-custom" alt="Profilit">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <h5 class="text-white fw-bold text-shadow">PROFILIT</h5>
+            <a href="profilit.html" class="text-decoration-none">
+              <div class="card border-0">
+                <img src="assets/img/profilit-home.jpg" class="card-img-custom" alt="Profilit">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="text-white fw-bold text-shadow">PROFILIT</h5>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
+
         </div>
       </div>
     </section>
@@ -176,26 +194,26 @@
 
   <div class="container-fluid py-3 bg-light">
     <div class="row justify-content-center align-items-center g-3">
-        <div class="col-4 col-md-2 text-center mx-auto me-0">
-            <img src="./assets/img/logo-kalciyan_sa_logo.jpeg" class="img-fluid" alt="Marca 1">
-        </div>
-        <div class="col-4 col-md-2 text-center mx-auto me-0">
-            <img src="./assets/img/logo_superglassimages.png" class="img-fluid" alt="Marca 2">
-        </div>
-        <div class="col-4 col-md-2 text-center mx-auto me-0">
-            <img src="./assets/img/logosuperfre_images.png" class="img-fluid" alt="Marca 3">
-        </div>
-        <div class="col-4 col-md-2 text-center mx-auto me-0">
-            <img src="./assets/img/logo.jpg" class="img-fluid" alt="Marca 4">
-        </div>
-        <div class="col-4 col-md-2 text-center mx-auto me-0">
-            <img src="./assets/img/logo-kalciyan_sa_logo.jpeg" class="img-fluid" alt="Marca 5">
-        </div>
-        <div class="col-4 col-md-2 text-center mx-auto me-0">
-            <img src="./assets/img/logosuperfre_images.png" class="img-fluid" alt="Marca 3">
-        </div>
+      <div class="col-4 col-md-2 text-center mx-auto me-0">
+        <img src="./assets/img/logo-kalciyan_sa_logo.jpeg" class="img-fluid" alt="Marca 1">
+      </div>
+      <div class="col-4 col-md-2 text-center mx-auto me-0">
+        <img src="./assets/img/logo_superglassimages.png" class="img-fluid" alt="Marca 2">
+      </div>
+      <div class="col-4 col-md-2 text-center mx-auto me-0">
+        <img src="./assets/img/logosuperfre_images.png" class="img-fluid" alt="Marca 3">
+      </div>
+      <div class="col-4 col-md-2 text-center mx-auto me-0">
+        <img src="./assets/img/logo.jpg" class="img-fluid" alt="Marca 4">
+      </div>
+      <div class="col-4 col-md-2 text-center mx-auto me-0">
+        <img src="./assets/img/logo-kalciyan_sa_logo.jpeg" class="img-fluid" alt="Marca 5">
+      </div>
+      <div class="col-4 col-md-2 text-center mx-auto me-0">
+        <img src="./assets/img/logosuperfre_images.png" class="img-fluid" alt="Marca 3">
+      </div>
     </div>
-</div>
+  </div>
 
 
   <footer class="bg-dark text-light py-5">
@@ -205,11 +223,11 @@
           <h5 class="text-uppercase mb-4">Contáctanos</h5>
           <ul class="list-unstyled">
             <li><a href="tel:+5493584000000" class="text-light text-decoration-none"><i
-                  class="fa-solid fa-phone me-2"></i> +54 9 358 4000000</a></li>
+                  class="fa-solid fa-phone me-2"></i> +54 9 3586549086</a></li>
             <li><a href="mailto:info@vitcristales.com" class="text-light text-decoration-none"><i
-                  class="fa-solid fa-envelope me-2"></i> info@vitcristales.com</a></li>
-            <li><a href="#" class="text-light text-decoration-none"><i class="fa-solid fa-location-dot me-2"></i> Calle
-                Falsa 123, Río Cuarto, Córdoba</a></li>
+                  class="fa-solid fa-envelope me-2"></i> vitcristales@hotmail.com</a></li>
+            <li><a href="#" class="text-light text-decoration-none"><i class="fa-solid fa-location-dot me-2"></i> Av.
+                Marcelo T de Alvear 1666, Río Cuarto, Córdoba</a></li>
           </ul>
           <div class="social-links mt-3">
             <a href="https://www.facebook.com/" target="_blank" class="text-light me-3"><i
@@ -232,11 +250,11 @@
         <div class="col-md-3 mb-4">
           <h5 class="text-uppercase mb-4">Enlaces Rápidos</h5>
           <ul class="list-unstyled">
-            <li><a href="#home" class="text-light text-decoration-none">Inicio</a></li>
-            <li><a href="#quienes-somos" class="text-light text-decoration-none">Quiénes Somos</a></li>
-            <li><a href="#obras-realizadas" class="text-light text-decoration-none">Obras Realizadas</a></li>
-            <li><a href="#productos-destacados" class="text-light text-decoration-none">Productos</a></li>
-            <li><a href="#contacto" class="text-light text-decoration-none">Contacto</a></li>
+            <li><a href="index.html" class="text-light text-decoration-none">Inicio</a></li>
+            <li><a href="/sobrenosotros.html" class="text-light text-decoration-none">Sobre Nosotros</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Mantenimientos</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Productos</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contacto</a></li>
           </ul>
         </div>
         <div class="col-md-3 mb-4 d-flex justify-content-center align-items-center">
@@ -250,16 +268,16 @@
       </div>
     </div>
   </footer>
-   <button id="btnArriba" onclick="volverArriba()">
-  <i class="fa-solid fa-arrow-up"></i>
-</button>
-  <!-- Scripts -->
+  <button id="btnArriba" onclick="volverArriba()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
- 
+
 </body>
 
 </html>
